@@ -9,7 +9,7 @@ import com.gestor_usuario.ms_gestor_usuario.model.entity.usuarioEntity;
 public interface usuarioRepository extends JpaRepository<usuarioEntity, Integer>{
 
     usuarioEntity findByCorreo(String correo);
-    Boolean exitsByCorreo(String correo);
+    Boolean existsByCorreo(String correo);
     void deleteByCorreo(String correo);
 
 }

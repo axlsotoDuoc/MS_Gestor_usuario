@@ -16,7 +16,7 @@ public class usuarioService {
     public String crearUsuario(usuario user){
 
         try {
-            Boolean estado = usuariorepository.exitsByCorreo(user.getCorreo());
+            Boolean estado = usuariorepository.existsByCorreo(user.getCorreo());
             if (!estado){
                 usuarioEntity usuarioNuevo = new usuarioEntity();
                     usuarioNuevo.setId(user.getId());
