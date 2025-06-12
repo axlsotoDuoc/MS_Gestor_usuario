@@ -1,5 +1,4 @@
-package com.gestor_usuario.ms_gestor_usuario.model.entity;
-
+package com.ms_gestor_de_usuario.principal.models.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -10,8 +9,7 @@ import lombok.Data;
 
 @Entity
 @Data
-public class usuarioEntity {
-    
+public class UsuarioEntity {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

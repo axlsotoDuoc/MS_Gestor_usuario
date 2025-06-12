@@ -1,4 +1,4 @@
-package com.gestor_usuario.ms_gestor_usuario;
+package com.ms_gestor_de_usuario.principal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

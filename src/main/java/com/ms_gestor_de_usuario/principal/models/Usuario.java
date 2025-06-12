@@ -1,4 +1,4 @@
-package com.gestor_usuario.ms_gestor_usuario.model;
+package com.ms_gestor_de_usuario.principal.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,9 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+public class Usuario {
 
-public class usuario {
-    
     private int id;
     private String
             nombre, 
@@ -20,4 +19,5 @@ public class usuario {
             correo,
             rol,
             contrasena;
+
 }
