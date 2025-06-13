@@ -59,8 +59,8 @@ public class UserController {
 
     @Operation(summary = "Actualizar un usuario")
     @PutMapping("/actualizarUsuario")
-    public ResponseEntity<String> actualizarUsuario(@RequestBody Usuario usuario) {
-        return ResponseEntity.ok(usuarioservice.actualizarUsuario(usuario));
+    public ResponseEntity<String> actualizarUsuario(@PathVariable int id,@RequestBody Usuario usuario) {
+        return ResponseEntity.ok(usuarioservice.actualizarUsuario(id, usuario));
     }
 
 

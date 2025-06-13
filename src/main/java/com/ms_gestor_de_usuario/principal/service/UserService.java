@@ -19,7 +19,6 @@ public class UserService {
     @Autowired
     private UsuarioRepository usuarioRepository;
 
-    private final List<Usuario> usuarios = new ArrayList<>();
 
     //Obtener usuario por correo
     public Usuario traerUsuario(String correo){
@@ -93,7 +92,7 @@ public class UserService {
     }
 
     //Actualizar usuario
-    public String actualizarUsuario(Usuario user) {
+    public String actualizarUsuario(int id, Usuario user) {
         try {
             UsuarioEntity usuarioActualizado = usuarioRepository.findUsuarioById(user.getId());
             if (usuarioActualizado != null) {
