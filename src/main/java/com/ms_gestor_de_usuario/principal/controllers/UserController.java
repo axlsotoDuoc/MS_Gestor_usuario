@@ -38,7 +38,7 @@ public class UserController {
     }
     
 
-    @Operation(summary = "Este endpoint permite obtener un usuario por correo")
+    @Operation(summary = "Este endpoint permite obtener un usuario por su correo")
     @GetMapping("/usuarios/{correo}")
     public ResponseEntity<Usuario> traerUsuario(@PathVariable String correo) {
         Usuario usuario = usuarioservice.traerUsuario(correo);
