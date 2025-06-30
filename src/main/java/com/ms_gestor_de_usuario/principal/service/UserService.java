@@ -24,7 +24,7 @@ public class UserService {
     public Usuario traerUsuario(String correo){
         try{
             UsuarioEntity usuario = usuarioRepository.findByCorreo(correo);
-            if (usuario!=null){
+            if (usuario != null){
                 Usuario usuarioNuevo = new Usuario(
                     usuario.getId(),
                     usuario.getNombre(),
