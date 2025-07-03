@@ -21,7 +21,7 @@ jobs:
                     key: ${{ secrets.PRIVATE_KEY }}
                     port: ${{ secrets.PORT }}
                     script: |
-                            mkdir -p /home/ubuntu/fs1001
+                            mkdir -p /home/ubuntu/fs1003
 
 
             - name: Sincronizar archivos con el servidor
@@ -31,7 +31,7 @@ jobs:
                 path: "./"
                 remote_host: ${{ secrets.IP_SERVER }}
                 remote_user: ${{ secrets.USERNAME }}
-                remote_path: "/home/ubuntu/fs1001/"
+                remote_path: "/home/ubuntu/fs1003/"
                 remote_key: ${{ secrets.PRIVATE_KEY }}
                 remote_port: ${{ secrets.PORT }}
 
@@ -45,6 +45,6 @@ jobs:
                 key: ${{ secrets.PRIVATE_KEY }}
                 port: ${{ secrets.PORT }}
                 script: |
-                        cd /home/ubuntu/fs1001/
+                        cd /home/ubuntu/fs1003/
                         sudo docker compose down
                         sudo docker compose up -d --build
