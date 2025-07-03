@@ -1,34 +1,42 @@
-HELP.md
+# === MAVEN ===
 target/
 !.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
 
-### STS ###
+# === ARCHIVOS TEMPORALES ===
+*.log
+*.tmp
+*.swp
+*.bak
+
+# === CONFIGURACIONES DE IDES ===
+
+## Spring Tool Suite (STS) / Eclipse
 .apt_generated
 .classpath
 .factorypath
 .project
-.settings
+.settings/
 .springBeans
-.sts4-cache
+.sts4-cache/
 
-### IntelliJ IDEA ###
-.idea
+## IntelliJ IDEA
+.idea/
 *.iws
 *.iml
 *.ipr
+out/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+## NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
 
-### VS Code ###
+## VS Code
 .vscode/
 .env
+
+# === SISTEMA OPERATIVO ===
+.DS_Store
+Thumbs.db
