@@ -80,7 +80,7 @@ public class UserService {
         try {
             if (usuarioRepository.existsById(id)) {
                 usuarioRepository.deleteById(id);
-                return "Usuario borrado correctamente";
+                return "Usuario borrado correctamente PRUEBA";
             }
             return "Usuario no encontrado";
         } catch (Exception e) {
