@@ -84,7 +84,7 @@ public class UserService {
             }
             return "Usuario no encontrado";
         } catch (Exception e) {
-            return "Error al borrar usuario: PRUEBVAAA asdsad" + e.getMessage();
+            return "Error al borrar usuario: " + e.getMessage();
         }
     }
 
