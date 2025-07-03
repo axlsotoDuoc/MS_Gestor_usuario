@@ -107,7 +107,7 @@ public class UserService {
                 usuarioActualizado.setRol(user.getRol());
                 usuarioActualizado.setContrasena(user.getContrasena());
                 usuarioRepository.save(usuarioActualizado);
-                return "Usuario actualizado correctamente";
+                return "Usuario actualizado correctamente PRUEBA AAA";
             } else {
                 return "Usuario no encontrado";
             }
